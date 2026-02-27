@@ -1,0 +1,21 @@
+@Edzések_HostAddress = http://localhost:5194
+
+GET {{Edzések_HostAddress}}/hosszu/60
+Accept: application/json
+
+###
+GET {{Edzések_HostAddress}}/vendeg?nev=Kiss%20Anna
+Accept: application/json
+
+###
+GET {{Edzések_HostAddress}}/aktiv/2
+Accept: application/json
+
+###
+PUT {{Edzések_HostAddress}}/modosit
+Content-Type: application/json
+Accept: application/json
+{
+   "azon": 12,
+ "kaloria": 750
+}
